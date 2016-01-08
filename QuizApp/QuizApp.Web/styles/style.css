@@ -1,0 +1,33 @@
+﻿/*Reference: http://stackoverflow.com/questions/22196587/how-to-center-align-vertically-the-container-in-bootstrap */
+/*Using flex*/
+.vertical-center1 {
+    min-height: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+/*Using legacy css*/
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    height: 100%;
+    display: table;
+    width: 100%;
+    padding: 0;
+}
+
+.row {
+    height: 100%;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.vertical-center {
+    float: none;
+    margin: 0 auto;
+}
